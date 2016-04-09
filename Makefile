@@ -15,4 +15,4 @@ file:
 	g++ $(FLAGS) -o file file.cpp
 
 clean:
-	rm grade guess cricket file
+	rm -f grade guess cricket file
