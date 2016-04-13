@@ -1,6 +1,6 @@
 FLAGS=-ansi -pedantic-errors -Wall
 
-all: grade guess cricket file calctime
+all: grade guess cricket file calctime accel
 
 grade:
 	g++ $(FLAGS) -o grade grade.cpp
@@ -17,5 +17,8 @@ file:
 calctime:
 	g++ $(FLAGS) -o calctime calctime.cpp
 
+accel:
+	g++ $(FLAGS) -o accel accel.cpp
+
 clean:
-	rm -f grade guess cricket file calctime
+	rm -f grade guess cricket file calctime accel
